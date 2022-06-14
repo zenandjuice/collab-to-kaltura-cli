@@ -31,16 +31,24 @@ To use, you will need your Collaborate LTI Key and Secret and Kaltura Partner ID
 
 This only works with PUBLIC Collaborate Ultra recordings.  If your recordings are not public, open a Blackboard support ticket and they can change the visibility of recordings.
 
+
 Edit:
 
 Line 84 - Collab LTI key (Consumer Key in Collaborate Ultra Building Block)
+
 Line 85 - Collab LTI secret (Shared Secret in Collaborate Ultra Building Block)
+
 Line 86 - Collab CSA Service URL
+
 Line 129: Kaltura partner id
+
 Line 141: Kaltura admin secret
+
 Line 144: Kaltura partner id
+
 
 And pay attention to:
 
 Line 91:  Collab Oauth timeout (minutes)
+
 Line 145:  Kaltura Oauth timeout (seconds)
