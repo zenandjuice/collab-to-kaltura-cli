@@ -27,3 +27,13 @@ Tags: "collaborate_recording", "1223-SUBJ-1234"
 ReferenceID: "Collaborate_1a3d015ddac62cf14cec249a939af4a7"
 Owner: chris
 
+To use, you will need your Collaborate LTI Key and Secret and Kaltura Partner ID and admin secret.
+
+Edit:
+
+Line 79 - Collab LTI key
+Line 80 - Collab LTI secret
+Line 124: Kaltura partner id
+Line 136: Kaltura admin secret
+Line 139: Kaltura partner id
+
