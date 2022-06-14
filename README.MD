@@ -1,12 +1,12 @@
 # Publish Collaborate to Kaltura command line tool
 
-This code was originally written by Heather Crites (https://github.com/hcrites-cscc)
+This code was originally written by Heather Crites (https://github.com/hcrites-cscc) and requires the Kaltura Client for Python (https://pypi.org/project/KalturaApiClient/).
 
-run with:
+Launch with:
 
 python3 publish_recordings_to_kaltura.py
 
-This script looks for a "publish_recordings_to_kaltura.txt" file in the same folder that contains 3 fields in a tab delmiited format:
+This script looks for a "publish_recordings_to_kaltura.txt" file in the same folder.  This file contains 3 fields in a tab delmiited format:
 
 collab_recording_id bb_course_id username
 
