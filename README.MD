@@ -4,7 +4,7 @@ This code was originally written by Heather Crites (https://github.com/hcrites-c
 
 Launch with:
 
-python3 publish_recordings_to_kaltura.py
+    python3 publish_recordings_to_kaltura.py
 
 This script looks for a "publish_recordings_to_kaltura.txt" file in the same folder.  This file contains 3 fields in a tab delmiited format:
 
@@ -29,11 +29,18 @@ Owner: chris
 
 To use, you will need your Collaborate LTI Key and Secret and Kaltura Partner ID and admin secret.
 
+This only works with PUBLIC Collaborate Ultra recordings.  If your recordings are not public, open a Blackboard support ticket and they can change the visibility of recordings.
+
 Edit:
 
-Line 79 - Collab LTI key
-Line 80 - Collab LTI secret
-Line 124: Kaltura partner id
-Line 136: Kaltura admin secret
-Line 139: Kaltura partner id
+Line 84 - Collab LTI key (Consumer Key in Collaborate Ultra Building Block)
+Line 85 - Collab LTI secret (Shared Secret in Collaborate Ultra Building Block)
+Line 86 - Collab CSA Service URL
+Line 129: Kaltura partner id
+Line 141: Kaltura admin secret
+Line 144: Kaltura partner id
 
+And pay attention to:
+
+Line 91:  Collab Oauth timeout (minutes)
+Line 145:  Kaltura Oauth timeout (seconds)
