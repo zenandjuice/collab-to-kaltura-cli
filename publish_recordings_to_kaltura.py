@@ -1,4 +1,4 @@
-import requests, json, datetime, jwt
+import requests, json, datetime, jwt, re
 from urllib.parse import urlencode
 from KalturaClient import *
 from KalturaClient.Plugins.Core import *
@@ -31,7 +31,8 @@ def get_recordings(recording_uuid, course_id, owner, oAuth, kaltura):
 
         else:
             start_date = datetime.datetime.strptime(recording["startTime"], "%Y-%m-%dT%H:%M:%S.%fZ")
-            get_recording_data(recording["id"], course_id, course_id+" "+recording["name"]+" - "+start_date.strftime("%m/%d/%Y"), owner, oAuth, kaltura)
+            recording_name = re.sub(r'[^a-zA-Z0-9\_\-\s\"\']', '', recording["name"])
+            get_recording_data(recording["id"], course_id, course_id+" "+recording_name+" - "+start_date.strftime("%m/%d/%Y"), owner, oAuth, kaltura)
 
 
 def get_recording_data(recording_uuid, course_id, recording_name, owner, oAuth, kaltura):
